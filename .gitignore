@@ -1,41 +1,66 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Testing
+coverage/
 
-# testing
-/coverage
+# Next.js build output
+.next/
+out/
 
-# next.js
-/.next/
-/out/
+# NestJS build output
+dist/
 
-# production
-/build
+# Turborepo build cache
+.turbo/
 
-# misc
-.DS_Store
-*.pem
+# Production build outputs
+build/
 
-# debug
+# Debug logs
+*.log
 npm-debug.log*
 yarn-debug.log*
+pnpm-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# Local environment files
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+UNSRATE-Backend/.env
+unsrate/.env
+backend-go/.env
 
-# vercel
-.vercel
+# Go build outputs and binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
 
-# typescript
+# IDE / Editor configuration
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript compiler build info
 *.tsbuildinfo
 next-env.d.ts
